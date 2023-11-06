@@ -1,3 +1,2 @@
-app/moodledata
-app/public
-app/phpu_moodledata
+.gitignore
+app/
