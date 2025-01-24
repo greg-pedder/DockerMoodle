@@ -11,5 +11,3 @@ RUN mv "$PHP_INI_DIR/php.ini-development" "$PHP_INI_DIR/php.ini"
 
 COPY ./moodlephp.ini "$PHP_INI_DIR/conf.d/moodlephp.ini"
 COPY ./moodlephpfpm.conf "/usr/local/etc/php-fpm.d"
-COPY ./conf.d/xdebug.ini "/usr/local/etc/php/conf.d/xdebug.ini"
-COPY ./conf.d/error_reporting.ini "/usr/local/etc/php/conf.d/error_reporting.ini"
