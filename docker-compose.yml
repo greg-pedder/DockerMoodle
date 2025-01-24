@@ -22,12 +22,12 @@ services:
         volumes:
             - ./app:/app:delegated
     mysql:
-        image: mariadb:10.5
+        image: mariadb:latest
         environment:
             MYSQL_ROOT_PASSWORD: 'purple'
             MYSQL_USER: 'moodleuser'
             MYSQL_PASSWORD: 'moodlepass'
-            MYSQL_DATABASE: 'moodle40'
+            MYSQL_DATABASE: 'moodle44'
         restart: always
         volumes:
             - mysqldata:/var/lib/mysql:delegated
