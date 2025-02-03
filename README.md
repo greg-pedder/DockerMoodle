@@ -1,11 +1,11 @@
-# docker_moodle11
+# docker_moodle50
 
 == Explanation ==
 
-This directory contains the docker setup to run an instance of Moodle 4.1. A number of containers are created as follows
+This directory contains the docker setup to run an instance of Moodle 5.0. A number of containers are created as follows
 
-* PHP 8.0 to run the web instance of Moodle
-* PHP 8.0 (second instance) to run cron
+* PHP 8.4 to run the web instance of Moodle
+* PHP 8.4 (second instance) to run cron
 * nginx as the web server
 * redis for cache
 * mariadb for database
@@ -37,7 +37,3 @@ Network host names are the same as the service names (e.g. just 'redis')
 * docker-compose up --build -d
 * If I haven't missed anything, you should be able to access/install Moodle at localhost
 * MySQL should be accessible by your favourite client also at localhost
-
-== NOTES ==
-
-* STACK breaks PHPUnit testing - see, https://github.com/maths/moodle-qtype_stack/issues/729 (a define line is needed)
