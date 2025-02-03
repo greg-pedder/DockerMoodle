@@ -41,7 +41,7 @@ $CFG = new stdClass();
 $CFG->dbtype    = 'mariadb';      // 'pgsql', 'mariadb', 'mysqli', 'auroramysql', 'sqlsrv' or 'oci'
 $CFG->dblibrary = 'native';     // 'native' only at the moment
 $CFG->dbhost    = 'mysql';  // eg 'localhost' or 'db.isp.com' or IP
-$CFG->dbname    = 'moodle11';     // database name, eg moodle
+$CFG->dbname    = 'moodle50';     // database name, eg moodle
 $CFG->dbuser    = 'root';   // your database username
 $CFG->dbpass    = 'purple';   // your database password
 $CFG->prefix    = 'mdl_';       // prefix to use for all table names
@@ -132,7 +132,7 @@ $CFG->dboptions = array(
 // If you need both intranet and Internet access please read
 // http://docs.moodle.org/en/masquerading
 
-$CFG->wwwroot   = 'http://localhost';
+$CFG->wwwroot   = 'http://[your_container_ip]';
 
 
 //=========================================================================
@@ -847,10 +847,17 @@ $CFG->noemailever = true;    // NOT FOR PRODUCTION SERVERS!
 //=========================================================================
 // 9. PHPUNIT SUPPORT
 //=========================================================================
-// $CFG->phpunit_prefix = 'phpu_';
-// $CFG->phpunit_dataroot = '/home/example/phpu_moodledata';
-// $CFG->phpunit_directorypermissions = 02777; // optional
-// $CFG->phpunit_profilingenabled = true; // optional to profile PHPUnit runs.
+$CFG->phpunit_dbtype    = 'mariadb';      // 'pgsql', 'mariadb', 'mysqli', 'mssql', 'sqlsrv' or 'oci'
+$CFG->phpunit_dblibrary = 'native';     // 'native' only at the moment
+$CFG->phpunit_dbhost    = 'mysql';  // eg 'localhost' or 'db.isp.com' or IP
+$CFG->phpunit_dbname    = 'm5phpunit';     // database name, eg moodle
+$CFG->phpunit_dbuser    = 'root';   // your database username
+$CFG->phpunit_dbpass    = 'purple';   // your database password
+$CFG->phpunit_prefix = 'phpu_';
+$CFG->phpunit_dataroot = '/app/phpu_moodledata';
+$CFG->phpunit_directorypermissions = 02777; // optional
+$CFG->phpunit_profilingenabled = true; // optional to profile PHPUnit runs.
+define('QTYPE_STACK_TEST_CONFIG_PLATFORM', 'none');
 //
 //
 //=========================================================================
