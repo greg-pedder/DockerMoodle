@@ -27,7 +27,7 @@ services:
             MYSQL_ROOT_PASSWORD: 'purple'
             MYSQL_USER: 'moodleuser'
             MYSQL_PASSWORD: 'moodlepass'
-            MYSQL_DATABASE: 'moodle44'
+            MYSQL_DATABASE: 'moodle50'
         restart: always
         volumes:
             - mysqldata:/var/lib/mysql:delegated
