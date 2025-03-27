@@ -4,8 +4,8 @@
 
 This directory contains the docker setup to run an instance of Moodle 5.0. A number of containers are created as follows
 
-* PHP 8.4 to run the web instance of Moodle
-* PHP 8.4 (second instance) to run cron
+* PHP 8.3 to run the web instance of Moodle
+* PHP 8.3 (second instance) to run cron
 * nginx as the web server
 * redis for cache
 * mariadb for database
