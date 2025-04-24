@@ -1,4 +1,4 @@
-# docker_moodle11
+# docker_moodle
 
 == Explanation ==
 
@@ -16,7 +16,7 @@ local paths are relative to the directory with the compose file. There are no ab
 
 PHP is slightly more complicated. The default PHP image doesn't have all the extensions we need. We therefore have a
 PHP.Dockerfile referenced by the compose file. This tells docker to build a new image using these instructions. As PHP 
-sits on a very limited Debian Linux instance most of this such be fairly obvious. Note that the confiuration files (e.g php.ini)
+sits on a very limited Debian Linux instance most of this file should be fairly obvious. Note that the confiuration files (e.g php.ini)
 are in the local folder and copied there on the build. 
 
 The Moodle program and data files are mapped to local directories under this folder so you can access them as normal
