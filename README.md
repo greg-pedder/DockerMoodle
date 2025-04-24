@@ -2,13 +2,13 @@
 
 == Explanation ==
 
-This directory contains the docker setup to run an instance of Moodle 4.1. A number of containers are created as follows
+This directory contains the Docker setup to run an instance of Moodle. A number of containers are created as follows:
 
-* PHP 8.0 to run the web instance of Moodle
-* PHP 8.0 (second instance) to run cron
+* PHP to run the web instance of Moodle - this default install uses PHP 8.0
+* PHP (second instance) to run cron - this default install uses PHP 8.0
 * nginx as the web server
 * redis for cache
-* mariadb for database
+* mariadb for database - this uses the latest version
 
 The main configuration is setup in the file docker-compose.yml. Each service is a container and the compose file gives the 
 various configuration details for that service. The volumes directives map paths inside the containers to local paths. Note that
@@ -40,4 +40,6 @@ Network host names are the same as the service names (e.g. just 'redis')
 
 == NOTES ==
 
-* STACK breaks PHPUnit testing - see, https://github.com/maths/moodle-qtype_stack/issues/729 (a define line is needed)
+* STACK breaks PHPUnit testing - see, https://github.com/maths/moodle-qtype_stack/issues/729 (a define line is needed).
+* This repo can and should be branched and updated to match the version of Moodle you wish to run.
+* The version of PHP, Nginx, Redis and MariaDB used will need to be suitable for the environment also.
