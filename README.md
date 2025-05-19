@@ -1,8 +1,8 @@
-# docker_moodle50
+# docker_moodle45
 
 == Explanation ==
 
-This directory contains the docker setup to run an instance of Moodle 5.0. A number of containers are created as follows
+This directory contains the docker setup to run an instance of Moodle 4.5. A number of containers are created as follows
 
 * PHP 8.3 to run the web instance of Moodle
 * PHP 8.3 (second instance) to run cron
