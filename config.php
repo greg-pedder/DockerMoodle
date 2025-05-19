@@ -40,7 +40,7 @@ $CFG = new stdClass();
 
 $CFG->dbtype    = 'mariadb';      // 'pgsql', 'mariadb', 'mysqli', 'auroramysql', 'sqlsrv' or 'oci'
 $CFG->dblibrary = 'native';     // 'native' only at the moment
-$CFG->dbhost    = 'localhost';  // eg 'localhost' or 'db.isp.com' or IP
+$CFG->dbhost    = '[your VM IP address:Container DB port]';  // eg 'localhost' or 'db.isp.com' or IP
 $CFG->dbname    = 'moodle45';     // database name, eg moodle
 $CFG->dbuser    = 'root';   // your database username
 $CFG->dbpass    = 'purple';   // your database password
@@ -162,7 +162,7 @@ $CFG->dboptions = array(
 // If you need both intranet and Internet access please read
 // http://docs.moodle.org/en/masquerading
 
-$CFG->wwwroot   = 'http://example.com/moodle';
+$CFG->wwwroot   = 'http://[your VM IP address:Container Web port]';
 
 
 //=========================================================================
