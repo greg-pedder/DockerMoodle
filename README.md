@@ -28,7 +28,7 @@ Network host names are the same as the service names (e.g. just 'redis')
 
 * Install Docker daemon and get running
 * Stop any local instances of web server and mysql
-* Make sure you have the docker-compose command installed
+* Make sure you have the docker compose command installed
 * Clone this repo somewhere suitable (everything else is relative to this folder)
 * Creat subdirectories app/moodledata app/public. 
 * Clone/copy Moodle into app/public (not as a subdir, public itself)
