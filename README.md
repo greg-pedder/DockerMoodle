@@ -10,7 +10,7 @@ This directory contains the docker setup to run an instance of Moodle 5.1. A num
 * redis for cache
 * mariadb for database
 
-The main configuration is setup in the file docker-compose.yml. Each service is a container and the compose file gives the 
+The main configuration is setup in the file compose.yml. Each service is a container and the compose file gives the 
 various configuration details for that service. The volumes directives map paths inside the containers to local paths. Note that
 local paths are relative to the directory with the compose file. There are no absolute paths.
 
