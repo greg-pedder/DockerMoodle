@@ -1,3 +1,4 @@
+name: moodle51
 services:
     web:
         image: nginx:latest
