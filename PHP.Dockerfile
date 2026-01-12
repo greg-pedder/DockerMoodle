@@ -7,10 +7,8 @@ RUN docker-php-ext-install pdo_mysql
 RUN docker-php-ext-install mysqli
 RUN docker-php-ext-install gd
 RUN docker-php-ext-install soap
-RUN docker-php-ext-install intl
 RUN docker-php-ext-install zip
 RUN docker-php-ext-install xsl
-RUN docker-php-ext-install opcache
 RUN pecl install xdebug && docker-php-ext-enable xdebug
 RUN pecl install -o -f redis &&  rm -rf /tmp/pear &&  docker-php-ext-enable redis
 RUN localedef -c -i en_AU -f UTF-8 en_AU.UTF-8
