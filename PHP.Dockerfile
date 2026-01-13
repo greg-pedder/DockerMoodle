@@ -2,6 +2,7 @@ FROM php:8.4-fpm
 
 RUN apt-get update && apt-get install -y zlib1g-dev libpng-dev libjpeg-dev libxml2-dev libzip-dev libxslt-dev locales
 RUN docker-php-ext-configure gd --with-jpeg
+RUN docker-php-ext-install intl
 RUN docker-php-ext-install pdo
 RUN docker-php-ext-install pdo_mysql
 RUN docker-php-ext-install mysqli
