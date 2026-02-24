@@ -32,7 +32,7 @@ Network host names are the same as the service names (e.g. just 'redis')
 * Clone this repo somewhere suitable (everything else is relative to this folder)
 * Creat subdirectories app/moodledata app/public. 
 * Clone/copy Moodle into app/public (not as a subdir, public itself)
-* Copy config.php from here to that directory - modify as required
+* Copy config.php from here to *app/public* - *NOT* app/public/public - modify as required
 * app/moodledata should be chmod 0777
 * docker compose up --build -d
 * If I haven't missed anything, you should be able to access/install Moodle at localhost
